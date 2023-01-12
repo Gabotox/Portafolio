@@ -306,6 +306,7 @@ body{
     line-height: 1.5;
 }
 .sobremi .conte-sobremi .button {
+    border: 0;
     text-decoration: none;
     background: #252A2E;
     border-radius: 40px;
