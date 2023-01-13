@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,21 @@
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.all.min.js"
+        integrity="sha512-59nEVFc+y/gLPL2WjOAQqCbvZbs49xWdTiCxVpjeKhb8oyMviN8fcwFRl8VxVzeLfiH/NKpklQqqLFg0NdZBaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Portafolio - Gabriel Meza</title>
 </head>
 
 <body>
 
-
     <!-- <a class="btn-w" href="https://wa.link/bntmg5">
         <img src="img/whatsapp.png" alt="">
     </a> -->
+    
     <!-- SECCIÓN HEADER -->
     <div class="contenedor-header">
+        
         <header class="cab">
             <div class="logo">
                 <a href="#" class="lin">GMEZA</a>
@@ -32,16 +37,16 @@
                     <i class="fa-solid fa-xmark" id="cerrar"></i>
                     <img src="img/business-3d-man-lying-on-stomach-with-laptop.png" alt="" class="Logo_nav">
                     <ul class="lista">
-                        <li class="list"><a href="#inicio"
-                                class="lin correr activar" onclick="seleccionar(this)">INICIO</a></li>
-                        <li class="list"><a href="#sobremi"
-                                class="lin correr" onclick="seleccionar(this)">SOBRE MÍ</a></li>
-                        <li class="list"><a href="#skills"
-                                class="lin correr" onclick="seleccionar(this)">SKILLS</a></li>
-                        <li class="list"><a href="#portafolio"
-                                class="lin correr" onclick="seleccionar(this)">PORTAFOLIO</a></li>
-                        <li class="list"><a href="#contacto"
-                                class="lin correr" onclick="seleccionar(this)">CONTACTO</a></li>
+                        <li class="list"><a href="#inicio" class="lin correr activar"
+                                onclick="seleccionar(this)">INICIO</a></li>
+                        <li class="list"><a href="#sobremi" class="lin correr" onclick="seleccionar(this)">SOBRE MÍ</a>
+                        </li>
+                        <li class="list"><a href="#skills" class="lin correr" onclick="seleccionar(this)">SKILLS</a>
+                        </li>
+                        <li class="list"><a href="#portafolio" class="lin correr"
+                                onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                        <li class="list"><a href="#contacto" class="lin correr" onclick="seleccionar(this)">CONTACTO</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -103,7 +108,8 @@
                     desarrollándome en una compañía que coincida con mis valores y expectativas.
                 </p>
 
-                <a href="https://api.whatsapp.com/send?phone=573115140908" class="button">Escribeme <i class="fa-brands fa-facebook-messenger"></i>
+                <a href="https://api.whatsapp.com/send?phone=573115140908" class="button">Escribeme <i
+                        class="fa-brands fa-facebook-messenger"></i>
                     <span class="overlay"></span>
                 </a>
             </div>
@@ -479,7 +485,7 @@
                 </div>
                 <div class="formulario">
                     <img src="img/yeti.png" alt="">
-                    <form method="post" action="php/recibo.php">
+                    <form action="">
                         <br>
                         <br>
                         <input type="text" name="nombre" placeholder="Tu nombre..." required>
@@ -490,7 +496,7 @@
                         <br>
                         <textarea name="mensaje" placeholder="Mensaje..." cols="30" rows="3" required></textarea>
                         <br>
-                        <button class="btn" type="submit">Enviar</button>
+                        <button class="btn" type="button">Enviar</button>
                     </form>
                 </div>
 
@@ -609,14 +615,6 @@
 
     </footer>
     <script src="js/js.js"></script>
-
-
-
-    <!-- <script src="js/scroll.js"></script> -->
-    <script>
-
-    </script>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
