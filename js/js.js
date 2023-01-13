@@ -87,6 +87,24 @@ function slides2() {
     }
 }
 
+let btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+    Swal.fire({
+        icon: 'success',
+        title: 'Enviado satisfactoriamente',
+        showConfirmButton: false,
+        timer: 1400
+      })
+      setTimeout(function(){
+        Swal.fire({
+            icon: 'error',
+            title: 'No mentiras, no tengo hosting XD',
+            showConfirmButton: false,
+            timer: 1700
+        })
+      }, 1401);
+    
+})
 
 
 
