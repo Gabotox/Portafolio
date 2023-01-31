@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="shortcut icon" href="img/iconos/icon.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.all.min.js"
@@ -22,19 +23,19 @@
     <!-- <a class="btn-w" href="https://wa.link/bntmg5">
         <img src="img/whatsapp.png" alt="">
     </a> -->
-    
+
     <!-- SECCIÓN HEADER -->
     <div class="contenedor-header">
-        
+
         <header class="cab">
             <div class="logo">
-                <a href="https://www.facebook.com/profile.php?id=100019093819038" class="lin">GMEZA</a>
+                <a href="https://www.facebook.com/profile.php?id=100019093819038" class="lin">GM<span>EZA</span></a>
             </div>
             <div id="abajo"></div>
             <nav id="nav" class="navi">
                 <div class="sirv">
                     <i class="fa-solid fa-xmark" id="cerrar"></i>
-                    <img src="img/business-3d-man-lying-on-stomach-with-laptop.png" alt="" class="Logo_nav">
+                    <img src="img/iconos/business-3d-man-lying-on-stomach-with-laptop.png" alt="" class="Logo_nav">
                     <ul class="lista">
                         <li class="list"><a href="#inicio" class="lin correr activar"
                                 onclick="seleccionar(this)">INICIO</a></li>
@@ -50,7 +51,8 @@
                 </div>
             </nav>
             <div class="nav-responsive">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" id="ponerse"></i>
+                <i class="fa-solid fa-xmark" id="quitarse"></i>
             </div>
         </header>
     </div>
@@ -70,8 +72,8 @@
                             style="color: #00acee"></i></a>
                     <a href="https://www.instagram.com/gabrielmeza24/" class="lin"><i class="fa-brands fa-instagram"
                             style="color: #DD2A7B;"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=573115140908" class="lin"><i
-                            class="fa-brands fa-whatsapp" style="color: #00bb2d;"></i></a>
+                    <a href="https://www.linkedin.com/in/juan-gabriel-meza-benitez-82820a243/" class="lin"><i
+                            class="fa-brands fa-linkedin" style="color: #3b5998;"></i></a>
                 </div>
             </div>
             <div class="contenedor-img">
@@ -107,15 +109,20 @@
                     desarrollándome en una compañía que coincida con mis valores y expectativas.
                 </p>
 
-                <a href="https://api.whatsapp.com/send?phone=573115140908" class="button">Escribeme <i
+                <a href="https://www.facebook.com/profile.php?id=100019093819038" class="button">
+                    <span class="anima"></span>
+                    <span class="anima"></span>
+                    <span class="anima"></span>
+                    <span class="anima"></span>
+                    Escribeme <i
                         class="fa-brands fa-facebook-messenger"></i>
-                    <span class="overlay"></span>
+                    
                 </a>
             </div>
-            <div class="contenido-seccion">
+            <div class="contenido-seccion" data-aos="fade-right">
 
-                <div class="conte-detalles" data-aos="fade-right">
-                    <h3 class="titulo">Datos Personales</h3>
+                <div class="conte-detalles">
+                    <h3 class="titulo"><i class="fa-regular fa-user"></i> Datos Personales</h3>
                     <ul class="lista">
                         <li class="list">
                             <strong>Nacimiento</strong>
@@ -127,65 +134,60 @@
                         </li>
                         <li class="list">
                             <strong>E-mail</strong>
-                            juanmeza242001@gmail.com
+                            juanmeza 242001 @gmail.com
                         </li>
                         <li class="list">
                             <strong>Dirección</strong>
                             Sincelejo (Sucre) - COLOMBIA
                         </li>
                         <li class="list">
-                            <strong>Cargo</strong>
-                            <span>Desarrollador Web FrontEnd JR</span>
+                            <strong>Especialidad</strong>
+                            <span>Desarrollador Web FrontEnd JR <i class="fa-solid fa-laptop-code"></i></span>
                         </li>
                     </ul>
                 </div>
-                <div class="conte-intereses" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <h3 class="titulo">Intereses</h3>
+
+                <div class="conte-intereses">
+
+                    <h3 class="titulo"><i class="fa-regular fa-thumbs-up"></i>Intereses</h3>
+
                     <div class="conte-inte">
-                        <div class="interes">
-                            <i class="fa-solid fa-code"></i>
-                            <span>PROGRAMACIÓN</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>VIDEOJUEGOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-burger"></i>
-                            <span>COMIDA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-video"></i>
-                            <span>PELÍCULAS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane-departure"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-futbol"></i>
-                            <span>FÚTBOL</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-java"></i>
-                            <span>JAVA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-satellite"></i>
-                            <span>ASTRONOMÍA</span>
-                        </div>
+
                         <div class="interes">
                             <i class="fa-brands fa-square-js"></i>
                             <span>JAVASCRIPT</span>
                         </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAMACIÓN</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>PELÍCULAS</span>
+                        </div>
+
                         <div class="interes">
                             <i class="fa-brands fa-react"></i>
                             <span>REACT</span>
                         </div>
+
                         <div class="interes">
-                            <i class="fa-brands fa-node"></i>
-                            <span>NODEJS</span>
+                            <i class="fa-solid fa-burger"></i>
+                            <span>COMIDA</span>
                         </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FÚTBOL</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-brands fa-java"></i>
+                            <span>JAVA</span>
+                        </div>
+   
                     </div>
                 </div>
             </div>
@@ -201,58 +203,45 @@
             <h3 class="titulo-t" data-aos="fade-up" data-aos-duration="400">HABILIDADES</h3>
 
             <div class="tecnologias">
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/java.png" alt="">
-                    </div>
-                    <h3 class="titulo">JAVA (Básico)</h3>
-                </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/html.png" alt="">
-                    </div>
+                
+                <div class="tecnologia">
+                    <i class="fa-brands fa-html5"></i>
                     <h3 class="titulo">HTML 5</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/css-3.png" alt="">
-                    </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-css3-alt"></i>
                     <h3 class="titulo">CSS 3</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/java-script.png" alt="">
-                    </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-sass"></i>
+                    <h3 class="titulo">SASS</h3>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-square-js"></i>
                     <h3 class="titulo">JAVASCRIPT</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/php (1).png" alt="">
-                    </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-java"></i>
+                    <h3 class="titulo">JAVA (Básico)</h3>
+                </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-php"></i>
                     <h3 class="titulo">PHP (Básico)</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/mysql.png" alt="">
-                    </div>
-                    <h3 class="titulo">MySQL (Básico)</h3>
+                <div class="tecnologia">
+                    <i class="fa-solid fa-database"></i>
+                    <h3 class="titulo">MYSQL (Básico)</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/bootstrap.png" alt="">
-                    </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-bootstrap"></i>
                     <h3 class="titulo">BOOTSTRAP</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/git.png" alt="">
-                    </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-git-alt"></i>
                     <h3 class="titulo">GIT</h3>
                 </div>
-                <div class="tecnologia" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                    <div class="logo">
-                        <img src="img/github (1).png" alt="">
-                    </div>
+                <div class="tecnologia">
+                    <i class="fa-brands fa-github"></i>
                     <h3 class="titulo">GITHUB</h3>
                 </div>
 
@@ -264,126 +253,158 @@
 
 
 
+
     <!-- SECCIÓN EDUCACIÓN -->
     <section id="educacion" class="educacion">
-        <div class="container_edu">
+        <div class="container_eduero">
             <h3 class="titulo-ero" data-aos="fade-up" data-aos-duration="400">EDUCACIÓN</h3>
 
             <div class="contenedor_edu">
                 <div class="filas">
                     <div class="izquierda" data-aos="flip-left">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">Ingeniería de Sistemas</h4>
                         <span class="casa">Corporación Universitaria Antonio José de Sucre</span>
                         <span class="fecha">2019 - Hasta la fecha</span>
                         <p class="texto">Estudiante de Ingeniería de Sistemas en la
-                            Corporación Universitaria Antonio José de Sucre, 5to semestre</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                            Corporación Universitaria Antonio José de Sucre, 5to semestre
+                        </p>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="izquierda" data-aos="flip-right">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">CSS de 0 a Experto</h4>
                         <span class="casa">UDEMY</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Aprendizaje de CSS</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="izquierda" data-aos="flip-left">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">HTML de 0 a Experto</h4>
                         <span class="casa">UDEMY</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Aprendizaje de HTML</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="izquierda" data-aos="flip-right">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">JavaScript de Novato a Héroe</h4>
                         <span class="casa">UDEMY</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Aprendizaje de JavaScript, Sintaxis, Manejo del DOM, etc..</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="izquierda" data-aos="flip-left">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">Desarrollo Web - FrontEnd Web Developer</h4>
                         <span class="casa">UDEMY</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Dominio del Desarrollo Web FrontEnd con HTML, CSS y JavaScript</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                 </div>
                 <div class="filas-2">
                     <div class="derecha" data-aos="flip-right">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">Java</h4>
                         <span class="casa">Corporación Universitaria Antonio José de Sucre</span>
                         <span class="fecha">2021 - Actual</span>
                         <p class="texto">Lenguaje mater de la Universidad.
                             Sintáxis, POO, Estructuras de datos, etc..
                         </p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="derecha" data-aos="flip-left">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">Lógica de Programación y Algoritmos</h4>
                         <span class="casa">UDEMY - Corporación Universidad Antonio José de Sucre</span>
                         <span class="fecha">2021</span>
                         <p class="texto">Primer nivel de aprendizaje en programación</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="derecha" data-aos="flip-right">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">PHP</h4>
                         <span class="casa">UDEMY - Corporación Universitaria Antonio José de Sucre</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Aprendizaje de Backend con PHP</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="derecha" data-aos="flip-left">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">BOOTSTRAP</h4>
                         <span class="casa">UDEMY</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Aprendizaje del Framework de CSS para responsive</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                     <div class="derecha" data-aos="flip-right">
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
+                        <span class="li"></span>
                         <h4 class="titulo">Desarrollo de Sitios Responsivos</h4>
                         <span class="casa">Fundación Carlos Slim</span>
                         <span class="fecha">2022</span>
                         <p class="texto">Dominio del Responsive Design</p>
-                        <div class="linea">
-                            <div class="circulo">
-                            </div>
-                        </div>
+                        <i class="fa-solid fa-medal"></i>
                     </div>
 
                 </div>
@@ -401,92 +422,103 @@
             </h3>
 
             <div class="galeria" data-aos="zoom-in">
-                
-                    <div class="proyecto">
-                        <div class="fotog">
-                            <img src="img/coffeeexpress.png" alt="">
-                            <div class="overlay">
-                                <h3 class="titulo">Coffee Express</h3>
-                                <p class="subt">Cafetería virtual, HTML, CSS, JavaScript, PHP y MySQL</p>
-                            </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyectos/coffeeexpress.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Coffee Express</h3>
+                            <p class="subt">Cafetería virtual, HTML, CSS, JavaScript, PHP y MySQL</p>
                         </div>
-                        <div class="botonesi">
-                            <a href="#" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
-                            <a href="https://developer-info.000webhostapp.com/Coffee%20Express/Index.php" class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
-                        </div>
-                        
+                    </div>
+                    <div class="botonesi">
+                        <a href="#" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
+                        <a href="https://developer-info.000webhostapp.com/Coffee%20Express/Index.php"
+                            class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
                     </div>
 
-                    <div class="proyecto">
-                        <div class="fotog">
-                            <img src="img/calculadora.png" alt="">
-                            <div class="overlay">
-                                <h3 class="titulo">Calculator</h3>
-                                <p class="subt">Calculadora básica, HTML, CSS y JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="botonesi">
-                            <a href="https://github.com/Gabotox/Calculator" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
-                            <a href="https://gabotox.github.io/Calculator/" class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
-                        </div>
-                    </div>
+                </div>
 
-                    
-                    <div class="proyecto">
-                        <div class="fotog">
-                            <img src="img/store.png" alt="">
-                            <div class="overlay">
-                                <h3 class="titulo">FStore</h3>
-                                <p class="subt">E-commerce, HTML, CSS, JavaScript y JQuery</p>
-                            </div>
-                        </div>
-                        <div class="botonesi">
-                            <a href="https://github.com/Gabotox/FashionStore" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
-                            <a href="https://gabotox.github.io/FashionStore/" class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyectos/calculadora.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Calculator</h3>
+                            <p class="subt">Calculadora básica, HTML, CSS y JavaScript</p>
                         </div>
                     </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Gabotox/Calculator" class="botonesia">Código <i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="https://gabotox.github.io/Calculator/" class="botonesia">Demo <i
+                                class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
 
-                    <div class="proyecto">
-                        <div class="fotog">
-                            <img src="img/gamingreach.png" alt="">
-                            <div class="overlay">
-                                <h3 class="titulo">Gaming Reach</h3>
-                                <p class="subt">E-commerce, HTML, CSS, JavaScript y AOS(Librería de JS)</p>
-                            </div>
-                        </div>
-                        <div class="botonesi">
-                            <a href="https://github.com/Gabotox/GamingReach" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
-                            <a href="https://gabotox.github.io/GamingReach/" class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
-                        </div>
-                    </div>
 
-                    <div class="proyecto">
-                        <div class="fotog">
-                            <img src="img/geome.png" alt="">
-                            <div class="overlay">
-                                <h3 class="titulo">Operador de Figuras Geométricas</h3>
-                                <p class="subt">Calculadora de área, perimetro, etc, HTML, CSS, JavaScript</p>
-                            </div>
-                        </div>
-                        <div class="botonesi">
-                            <a href="https://github.com/Gabotox/OpFigurasGeometricas" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
-                            <a href="https://gabotox.github.io/OpFigurasGeometricas/" class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyectos/store.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">FStore</h3>
+                            <p class="subt">E-commerce, HTML, CSS, JavaScript y JQuery</p>
                         </div>
                     </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Gabotox/FashionStore" class="botonesia">Código <i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="https://gabotox.github.io/FashionStore/" class="botonesia">Demo <i
+                                class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
 
-                    <div class="proyecto">
-                        <div class="fotog">
-                            <img src="img/veter.png" alt="">
-                            <div class="overlay">
-                                <h3 class="titulo">Veter</h3>
-                                <p class="subt">Tienda Veterinaria, HTML, CSS, JavaScript y AOS(Libreria de JS)</p>
-                            </div>
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyectos/gamingreach.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Gaming Reach</h3>
+                            <p class="subt">E-commerce, HTML, CSS, JavaScript y AOS(Librería de JS)</p>
                         </div>
-                        <div class="botonesi">
-                            <a href="https://github.com/Gabotox/Pets" class="botonesia">Código <i class="fa-solid fa-code"></i></a>
-                            <a href="https://gabotox.github.io/Pets/" class="botonesia">Demo <i class="fa-solid fa-eye"></i></a>
-                        </div>                        
                     </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Gabotox/GamingReach" class="botonesia">Código <i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="https://gabotox.github.io/GamingReach/" class="botonesia">Demo <i
+                                class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyectos/geome.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Operador de Figuras Geométricas</h3>
+                            <p class="subt">Calculadora de área, perimetro, etc, HTML, CSS, JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Gabotox/OpFigurasGeometricas" class="botonesia">Código <i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="https://gabotox.github.io/OpFigurasGeometricas/" class="botonesia">Demo <i
+                                class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <div class="fotog">
+                        <img src="img/proyectos/veter.png" alt="">
+                        <div class="overlay">
+                            <h3 class="titulo">Veter</h3>
+                            <p class="subt">Tienda Veterinaria, HTML, CSS, JavaScript y AOS(Libreria de JS)</p>
+                        </div>
+                    </div>
+                    <div class="botonesi">
+                        <a href="https://github.com/Gabotox/Pets" class="botonesia">Código <i
+                                class="fa-solid fa-code"></i></a>
+                        <a href="https://gabotox.github.io/Pets/" class="botonesia">Demo <i
+                                class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
             </div>
             <a href="proyectos.html" class="vermas">Ver más <i class="fa-solid fa-eye"></i></a>
         </div>
@@ -503,21 +535,21 @@
                 <div class="continer">
                     <div class="slider-contenedor">
                         <div class="slider-test one">
-                            <img src="img/web1.jpg" alt="">
+                            <img src="img/slider/web1.jpg" alt="">
                         </div>
 
                         <div class="slider-test two">
-                            <img src="img/web2.jpg" alt="">
+                            <img src="img/slider/web2.jpg" alt="">
                         </div>
 
                         <div class="slider-test tree">
-                            <img src="img/web3.png" alt="">
+                            <img src="img/slider/web3.png" alt="">
                         </div>
 
                     </div>
                 </div>
                 <div class="formulario">
-                    <img src="img/yeti.png" alt="">
+                    <img src="img/iconos/yeti.png" alt="">
                     <form action="">
                         <br>
                         <br>
@@ -548,7 +580,7 @@
         <div class="contenedor">
             <div class="icono">
                 <div class="logo">
-                    <img src="img/business-3d-man-lying-on-stomach-with-laptop.png" alt="">
+                    <img src="img/iconos/business-3d-man-lying-on-stomach-with-laptop.png" alt="">
                     <h1 class="title">GMEZA</h1>
                 </div>
                 <p class="des">Apasionado por el Desarrollo Web y con ganas de aprender día a día las nuevas
@@ -561,8 +593,6 @@
                             style="color: #00acee"></i></a>
                     <a href="https://www.instagram.com/gabrielmeza24/" class="lin"><i class="fa-brands fa-instagram"
                             style="color: #DD2A7B;"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=573115140908" class="lin"><i
-                            class="fa-brands fa-whatsapp" style="color: #00bb2d;"></i></a>
                     <a href="#" class="lin"><i class="fa-regular fa-envelope" style="color: #CB3234;"></i></a>
                     <a href="https://www.linkedin.com/in/juan-gabriel-meza-benitez-82820a243/" class="lin"><i
                             class="fa-brands fa-linkedin" style="color: #3b5998;"></i></a>
@@ -588,50 +618,10 @@
 
                 </ul>
                 <ul class="lista">
-                    <h4 class="sobre">Proyectos <i class="fa-solid fa-briefcase"></i></h4>
-                    <li class="list">
-                        <a href="https://developer-info.000webhostapp.com/Coffee%20Express/Index.php" class="lin"><i
-                                class="fa-solid fa-utensils"></i> Coffee Express</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/FashionStore/" class="lin"><i
-                                class="fa-brands fa-shopify"></i> Fashion Store</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/GamingReach/" class="lin"><i class="fa-solid fa-gamepad"></i>
-                            Gaming Reach</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/JuegoAdivinar/" class="lin"><i class="fa-solid fa-dice"></i>
-                            Mini Juego Adivinar</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/Pagehack/" class="lin"><i
-                                class="fa-solid fa-chalkboard"></i> Page Hack</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/Pets/" class="lin"><i class="fa-solid fa-paw"></i> Veter</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/Template/" class="lin"><i class="fa-solid fa-file-contract"></i> Template</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/Calculator/" class="lin"><i class="fa-solid fa-calculator"></i> Calculator</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://gabotox.github.io/OpFigurasGeometricas/" class="lin"><i class="fa-regular fa-square-full"></i> Operaciones de Figuras</a>
-                    </li>
-
-                </ul>
-                <ul class="lista">
                     <h4 class="sobre">Contacto <i class="fa-solid fa-network-wired"></i></h4>
                     <li class="list">
                         <a href="https://www.facebook.com/profile.php?id=100019093819038" class="lin"><i
                                 class="fa-brands fa-facebook"></i> Facebook</a>
-                    </li>
-                    <li class="list">
-                        <a href="https://api.whatsapp.com/send?phone=573115140908" class="lin"><i
-                                class="fa-brands fa-whatsapp"></i> Whatsapp</a>
                     </li>
                     <li class="list">
                         <a href="https://www.instagram.com/gabrielmeza24/" class="lin"><i
