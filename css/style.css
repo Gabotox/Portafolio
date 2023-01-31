@@ -282,7 +282,7 @@ body {
 }
 .sobremi .conte-sobremi .descrip {
     font-size: 1.1rem;
-    padding-right: 10px;
+    padding-right: 1.7rem;
     line-height: 1.5;
 }
 .sobremi .conte-sobremi .button {
@@ -299,8 +299,8 @@ body {
     z-index: 10;
     overflow: hidden;
     -webkit-box-shadow:0px 0px 101px 0px rgba(255,0,128,0.9);
--moz-box-shadow: 0px 0px 101px 0px rgba(255,0,128,0.9);
-box-shadow: 0px 0px 101px 0px rgba(255,0,128,0.9);
+    -moz-box-shadow: 0px 0px 101px 0px rgba(255,0,128,0.9);
+    box-shadow: 0px 0px 101px 0px rgba(255,0,128,0.9);
 }
 .sobremi .conte-sobremi .button i {
     margin-left: 5px;
@@ -1045,10 +1045,6 @@ textarea {
     padding-bottom: 50px;
     align-items: center;
 }
-.pies .contenedor .icono {
-    width: 60%;
-    padding-right: 30px;
-}
 .pies .contenedor .icono .logo {
     display: flex;
     justify-content: left;
@@ -1416,6 +1412,10 @@ textarea {
     }
 }
 @media only screen and (max-width: 450px) {
+    #cerrar {
+        font-size: 1.5rem;
+        padding: .5rem .8rem;
+    }
     .inicio .contenido-banner .contenedor-img  {
         width: 85%;
     }
@@ -1533,5 +1533,36 @@ textarea {
     .portafolio .galeria .proyecto .botonesi .botonesia {
         padding: 12px 20px;
         font-size: 1.2rem;
+    }
+    .pies .contenedor .icono {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .pies .contenedor .icono .logo{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .pies .contenedor .icono .des {
+        width: 100%;
+
+        margin: 0;
+        margin: 0 auto;
     }
 }
