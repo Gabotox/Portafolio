@@ -285,6 +285,10 @@ body {
     padding-right: 1.7rem;
     line-height: 1.5;
 }
+.sobremi .conte-sobremi .botoni {
+    display: flex;
+    margin-top: 20px;
+}
 .sobremi .conte-sobremi .button {
     text-decoration: none;
     background: #252A2E;
@@ -292,7 +296,7 @@ body {
     width: max-content;
     padding: 15px 22px;
     display: block;
-    margin-top: 20px;
+    margin: 10px;
     font-size: 1.2rem;
     position: relative;
     transition: all .5s ease;
@@ -324,7 +328,7 @@ body {
     transition: all .5s ease;
 }
 .sobremi .conte-sobremi .button:hover::before {
-    border-left: 300px solid #FF0080;
+    border-left: 400px solid #FF0080;
 }
 .sobremi .conte-sobremi .button:hover i{
     color: #fff;
@@ -512,11 +516,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease;
+}
+.skills .tecnologias .tecnologia .titulo {
+    color: rgba(255, 255, 255, .3);
+    transition: all .5s ease;
 }
 .skills .tecnologias .tecnologia i {
     font-size: 4rem;
     margin-right: 1rem;
+    color: rgba(255, 0, 128, .5);
+    transition: all .5s ease;
+}
+.skills .tecnologias .tecnologia:hover {    
+    -webkit-box-shadow:0px 0px 10px 0px rgba(255,0,128,0.9);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255,0,128,0.9);
+    box-shadow: 0px 0px 10px 0px rgba(255,0,128,0.9);
+}
+.skills .tecnologias .tecnologia:hover .titulo{
+    color: #fff;
+}
+.skills .tecnologias .tecnologia:hover i{
     color: #FF0080;
+    transform: scale(1.04);
 }
 /* SECCIÓN EDUCACIÓN */
 .educacion {
@@ -822,23 +844,35 @@ body {
     justify-content: flex-end;
     align-items: flex-start;
     flex-direction: column;
-    transition: all .5s ease;
+    transition: all .3s ease;
     font-size: 1.2rem;
     letter-spacing: 1px;
     opacity: 0;
 }
 .portafolio .galeria .proyecto .fotog .overlay .titulo {
-    transition: all 1s ease;
+    transition: all .5s ease;
     font-weight: bold;
     font-size: 1.2rem;
     flex-wrap: wrap;
     text-align: left;
+    left: -100%;
+    position: relative;
+}
+.portafolio .galeria .proyecto .fotog .overlay:hover .titulo {
+    left: 0;
 }
 .portafolio .galeria .proyecto .fotog .overlay .subt {
     font-size: 1rem;
     text-align: left;
     margin-top: 5px;
     line-height: 1.2;
+    position: relative;
+    transition: all .5s ease;
+    left: -100%;
+    transition-delay: .1s;
+}
+.portafolio .galeria .proyecto .fotog .overlay:hover .subt{
+    left: 0;
 }
 .portafolio .galeria .proyecto .fotog .overlay:hover {
     opacity: 1;
@@ -1044,6 +1078,9 @@ textarea {
     margin: auto;
     padding-bottom: 50px;
     align-items: center;
+}
+.pies .contenedor .icono {
+    width: 60%;
 }
 .pies .contenedor .icono .logo {
     display: flex;
@@ -1418,6 +1455,9 @@ textarea {
     }
     .inicio .contenido-banner .contenedor-img  {
         width: 85%;
+    }
+    .sobremi .conte-sobremi .botoni {
+        flex-wrap: wrap;
     }
     .skills .tecnologias .tecnologia{
         width: 100%;
