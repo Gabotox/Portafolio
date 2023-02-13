@@ -123,7 +123,7 @@ btn.addEventListener("click", () => {
 let aceptar = document.getElementById("interesa");
 let declinar = document.getElementById("noInteresa");
 let aviso = document.getElementById("aviso_prin");
-let cont = 5;
+let cont = 10;
 var scrollPosition;
 
 setInterval(function iniciar() {
