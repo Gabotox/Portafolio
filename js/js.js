@@ -3,11 +3,10 @@ icon.addEventListener("click", mostrar);
 let bajo = document.getElementById("abajo");
 bajo.addEventListener("click", tapar);
 nav = document.getElementById("nav");
-let quitar = document.getElementById("cerrar");
 let quitarlo = document.getElementById("quitarse");
 let poner = document.getElementById("ponerse");
-quitar.addEventListener("click", tapar)
 let items = document.querySelectorAll(".lin");
+let whatsapp = document.getElementById("btn-w");
 items.forEach((item) => {
     item.addEventListener("click", tapar);
 })
@@ -16,28 +15,32 @@ function mostrar() {
     nav.style.left = "0px";
     bajo.style.display = "block";
     poner.style.display = "none";
-    quitarlo.style.display = "block"; 
+    quitarlo.style.display = "block";
+    whatsapp.style.opacity = "0";
+    whatsapp.style.zIndex = "-10";
 }
 
 function tapar() {
     nav.style.left = "-90%";
     bajo.style.display = "none";
     poner.style.display = "block";
-    quitarlo.style.display = "none"; 
+    quitarlo.style.display = "none";
+    whatsapp.style.opacity = "1";
+    whatsapp.style.zIndex = "99999";
 }
 
- function seleccionar(link){
-     var opciones = document.querySelectorAll('.correr');
-     link.classList.add("activar"); 
-     link = Array.from(opciones).find(ese =>{
+function seleccionar(link) {
+    var opciones = document.querySelectorAll('.correr');
+    link.classList.add("activar");
+    link = Array.from(opciones).find(ese => {
         for (const ese of opciones) {
-              if (ese !== link) {
-                    ese.classList.remove('activar');
-              }
+            if (ese !== link) {
+                ese.classList.remove('activar');
+            }
         }
-     })
-                  
- }
+    })
+
+}
 
 
 
@@ -99,22 +102,74 @@ btn.addEventListener("click", () => {
         title: 'Enviado satisfactoriamente',
         showConfirmButton: false,
         timer: 1400
-      })
-      setTimeout(function(){
+    })
+    setTimeout(function () {
         Swal.fire({
             icon: 'error',
             title: 'No mentiras, no tengo hosting XD',
             showConfirmButton: false,
             timer: 1700
         })
-      }, 1401);
-    
+    }, 1401);
+
 })
 
 
 
 
 
+
+
+let aceptar = document.getElementById("interesa");
+let declinar = document.getElementById("noInteresa");
+let aviso = document.getElementById("aviso_prin");
+let cont = 5;
+var scrollPosition;
+
+setInterval(function iniciar() {
+    cont--;
+    if (cont == 0) {
+        ejecucion();
+        clearInterval();
+    }
+}, 1000);
+
+function ejecucion() {
+    blockScroll();
+    aviso.style.display = "block";
+    aviso.style.zIndex = "999999999";
+    aviso.style.opacity = "1";
+    aceptar.addEventListener("click", () => {
+        aviso.style.zIndex = "-10";
+        aviso.style.opacity = "0";
+        window.open("https://gabotox.github.io/Curso/", "_blank");
+        unblockScroll();
+    })
+    declinar.addEventListener("click", () => {
+        aviso.style.zIndex = "-10";
+        aviso.style.opacity = "0";
+        unblockScroll();
+    })
+}
+
+
+
+// Función para bloquear el scroll
+function blockScroll() {
+  scrollPosition = window.pageYOffset;
+  document.body.style.top = -scrollPosition + "px";
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
+  document.body.style.overflow = "hidden";
+}
+
+// Función para desbloquear el scroll
+function unblockScroll() {
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.overflow = "";
+  window.scrollTo(0, scrollPosition);
+}
 
 
 AOS.init();
