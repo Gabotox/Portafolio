@@ -9,7 +9,7 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <link rel="shortcut icon" href="img/iconos/icon.png" />
+    <link rel="shortcut icon" href="img/iconos/fantasma.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.0/sweetalert2.all.min.js"
@@ -21,9 +21,26 @@
 <body>
 
     <a name="anun"></a>
-    <!-- <a class="btn-w" href="https://wa.link/bntmg5">
-        <img src="img/whatsapp.png" alt="">
-    </a> -->
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a class="btn-w" id="btn-w" href="https://wa.link/iuhor6">
+        <i class="fa-brands fa-square-whatsapp"></i>
+        Contáctame
+    </a>
+
+    <!-- SECCIÓN AVISO -->
+    <section class="aviso_prin active" id="aviso_prin">
+        <div class="aviso">
+            <img src="img/iconos/curso.svg" alt="HTML - CSS - JAVASCRIPT">
+            <div class="contenido_aviso">
+                <h4 class="titulo_aviso">Hola ¿Te interesa aprender Frontend?</h4>
+                <p class="parra_aviso">Te ofrezco un curso de Desarrollo Frontend, inscribete y aprende a hacer tus propios sitios web dinámicos</p>
+                <div class="aviso_botones">
+                    <button class="interesa" id="interesa">Me interesa</button>
+                    <button class="noInteresa" id="noInteresa">No me interesa</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- SECCIÓN HEADER -->
     <div class="contenedor-header">
@@ -35,8 +52,7 @@
             <div id="abajo"></div>
             <nav id="nav" class="navi">
                 <div class="sirv">
-                    <i class="fa-solid fa-xmark" id="cerrar"></i>
-                    <img src="img/iconos/business-3d-man-lying-on-stomach-with-laptop.png" alt="" class="Logo_nav">
+                    <img src="img/yo/ReadyPlayerMe-Avatar.png" alt="" class="Logo_nav">
                     <ul class="lista">
                         <li class="list"><a href="#inicio" class="lin correr activar"
                                 onclick="seleccionar(this)">INICIO</a></li>
@@ -57,7 +73,6 @@
             </div>
         </header>
     </div>
-
 
     <!-- SECCIÓN DE INICIO -->
     <section id="inicio" class="inicio">
@@ -87,8 +102,6 @@
         </svg></div>
 
     </section>
-
-
 
     <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobremi" class="sobremi">
@@ -197,8 +210,6 @@
 
     </section>
 
-
-
     <!-- SECCIÓN SKILLS -->
     <section id="skills" class="skills">
         <div class="container_skills">
@@ -252,9 +263,6 @@
 
         </div>
     </section>
-
-
-
 
     <!-- SECCIÓN EDUCACIÓN -->
     <section id="educacion" class="educacion">
@@ -415,8 +423,6 @@
 
     </section>
 
-
-
     <!-- SECCIÓN PORTAFOLIO -->
     <section id="portafolio" class="portafolio">
         <div class="container_porta">
@@ -527,8 +533,6 @@
         </div>
     </section>
 
-
-
     <!-- SECCIÓN DE CONTACTO -->
     <section id="contacto" class="contacto">
         <div class="contenedor_prin">
@@ -564,7 +568,7 @@
                         <br>
                         <textarea name="mensaje" placeholder="Mensaje..." cols="30" rows="3" required></textarea>
                         <br>
-                        <button class="btn" type="button">Enviar</button>
+                        <button class="btn" type="button">Enviar <i class="fa-regular fa-paper-plane"></i></button>
                     </form>
                 </div>
 
@@ -574,7 +578,6 @@
         </div>
     </section>
 
-
     <!-- FOOTER -->
     <footer class="pies">
         <a href="#anun" class="arriba">
@@ -583,12 +586,12 @@
         <div class="contenedor">
             <div class="icono">
                 <div class="logo">
-                    <img src="img/iconos/business-3d-man-lying-on-stomach-with-laptop.png" alt="">
+                    <img src="img/yo/ReadyPlayerMe-Avatar.png" alt="">
                     <h1 class="title">GMEZA</h1>
                 </div>
                 <p class="des">Apasionado por el desarrollo web, estoy constantemente buscando aprender y actualizar mis conocimientos sobre las últimas tecnologías en el campo. Mi experiencia incluye la utilización de HTML, CSS, SASS, Bootstrap, JavaScript, etc... para crear aplicaciones web dinámicas.
                 <br>
-                Si está interesado en contratar mis servicios o necesita más información sobre mi, no dude en ponerse en contacto conmigo.
+                Si estás interesado en contratar mis servicios o necesitas más información sobre mi, no dude en ponerse en contacto conmigo.
                 </p>
                 <div class="redes">
                     <a href="https://web.facebook.com/profile.php?id=100019093819038" class="lin" target="_blank">
@@ -634,11 +637,11 @@
                                 class="fa-brands fa-facebook"></i> Facebook</a>
                     </li>
                     <li class="list">
-                        <a href="https://www.instagram.com/gabrielmeza24/" class="lin"  target="_blank"><i
+                        <a href="https://www.instagram.com/gabcoderweb" class="lin"  target="_blank"><i
                                 class="fa-brands fa-instagram"></i> Instagram</a>
                     </li>
                     <li class="list">
-                        <a href="https://www.linkedin.com/in/gabriel-meza-82820a243/" class="lin"  target="_blank"><i
+                        <a href="https://www.linkedin.com/in/gabcoderweb" class="lin"  target="_blank"><i
                                 class="fa-brands fa-linkedin"></i> Linkedin</a>
                     </li>
 
